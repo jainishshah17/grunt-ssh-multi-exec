@@ -118,7 +118,8 @@ var init = function() {
                 host: host,
                 port: port,
                 username: username,
-                privateKey: fs.readFileSync(privateKey)
+                privateKey: fs.readFileSync(privateKey),
+                passphrase: passphrase
             });
         } else {
             tunnel.connect({
